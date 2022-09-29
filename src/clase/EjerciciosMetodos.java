@@ -17,7 +17,7 @@ public class EjerciciosMetodos {
 		// HALLAR AREA CIRCULO
 		System.out.println();
 		System.out.println("Calculamos el area de un circulo");
-		System.out.println(getAreaCirculo(0, 0, 2, 2));
+		System.out.println(getAreaCirculo(0, 0, 0, 2));
 		
 		// FACTORIAL DE UN NUMERO
 		System.out.println();
