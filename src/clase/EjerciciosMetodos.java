@@ -22,7 +22,7 @@ public class EjerciciosMetodos {
 		// FACTORIAL DE UN NUMERO
 		System.out.println();
 		System.out.println("calculamos factorial");
-		System.out.println(getFactorial(4));
+		System.out.println(getFactorial(-1));
 		
 	}
 	
@@ -69,13 +69,23 @@ public class EjerciciosMetodos {
 			
 			resultado = num;
 			
+						
 			// CASO BASE
 			if (resultado > 1) {
 				
 				resultado= getFactorial(resultado-1)*resultado;	
 				
+			// SI ES NEGATIVO
+			}else if (resultado < 0) {
+					
+				System.out.println("El factorial de un numero negativo no existe");
+				
+			// SI ES 0
+			} else {
+				
+				resultado = 1;
+				
 			}
-			
 	
 			return resultado;
 			
