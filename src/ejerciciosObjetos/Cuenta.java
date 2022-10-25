@@ -55,7 +55,8 @@ public class Cuenta {
 		
 		if (cantidad > 0) {
 			
-			this.cantidad += cantidad;
+			//this.cantidad += cantidad;
+			setCantidad(this.cantidad + cantidad);
 			
 		}
 		
@@ -66,10 +67,12 @@ public class Cuenta {
 		
 		if (cantidad > this.cantidad) {
 			
-			this.cantidad = 0;
+			//this.cantidad = 0;
+			setCantidad(0);
 		} else {
 			
-			this.cantidad -= cantidad;
+			//this.cantidad -= cantidad;
+			setCantidad(this.cantidad - cantidad);
 		}
 		
 	}

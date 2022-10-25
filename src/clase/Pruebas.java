@@ -1,21 +1,17 @@
 package clase;
 
-
 public class Pruebas {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		String saludo = "Hola Mundo!";
-		final double PI = 3.14;
+		String texto = "Hola Mundo!";
 		
-		
-		
-		System.out.println(saludo.toLowerCase());
-		if (PI < 4) {
+		System.out.println(texto.charAt(0));
 			
-			System.out.println(PI);
-		}
+		boolean asd = true;
+		
+		System.out.println(!asd);
 		
 		}
 		
