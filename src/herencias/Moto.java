@@ -35,6 +35,15 @@ public class Moto extends Vehiculo{
 	}
 	
 	
+	// METODO (Es buena costumbre poner Override para sobreescribir el metodo del padre; aunque funciona igual)
+	@Override
+	public String arrancar() {
+		
+		return "Arrancando moto...";
+		
+	}
+	
+	
 	// GETTERS SETTERS
 	public int getCubicaje() {
 		return cubicaje;

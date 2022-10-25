@@ -26,6 +26,16 @@ public class Vehiculo {
 
 	
 	
+	// METODOS
+	public String arrancar() {
+		
+		return "Arrancando vehiculo";
+		
+	}
+	
+		
+	
+	
 	// GETTERS Y SETTERS
 	public String getMarca() {
 		return marca;
