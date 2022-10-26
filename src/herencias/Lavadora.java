@@ -32,6 +32,7 @@ public class Lavadora extends Electrodomestico {
 	
 	
 	// METODOS
+	@Override
 	public double precioFinal() {
 		
 		double precio = super.precioFinal();
