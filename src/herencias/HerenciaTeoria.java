@@ -71,13 +71,70 @@ public class HerenciaTeoria {
 		 * 
 		 */
 
+		System.out.println();
+		System.out.println("EJERCICIO ELECTRODOMESTICOS");
+		
+		Electrodomestico[] electrodomesticos = new Electrodomestico[10];
+	 
+		electrodomesticos[0] = new Lavadora(200, 50); 
+		electrodomesticos[1] = new Lavadora(200, 50); 
+		electrodomesticos[2] = new Lavadora(300, "blanco", 'F', 60, 8); 
+		electrodomesticos[3] = new Lavadora(300, "blanco", 'D', 60, 8); 
+		electrodomesticos[4] = new Electrodomestico(250, 40); 
+		electrodomesticos[5] = new Television(100, 20); 
+		electrodomesticos[6] = new Television(100, "negro", 'D', 20, 1080, true); 
+		electrodomesticos[7] = new Television(100, "negro", 'E', 20, 1080, true); 
+		electrodomesticos[8] = new Television(100, "gris", 'F', 20, 1080, true); 
+		electrodomesticos[9] = new Television(100, "negro", 'A', 20, 1080, true); 
 		
 		
+		// RECORREMOS ARRAY Y EJECUTAMOS precioFinal();
+		for (int i = 0; i < 10; i++) {
+			
+			System.out.println();
+			System.out.println(electrodomesticos[i].toString());
+			System.out.println("Precio Final: " + electrodomesticos[i].precioFinal());
+			
+		}
 		
-		
-		
+	
 	
 	}
 	
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

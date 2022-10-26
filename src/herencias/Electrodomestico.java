@@ -30,6 +30,8 @@ public class Electrodomestico {
 	// CONSTRUCTOR CON PRECIO Y PESO
 	public Electrodomestico(double precioBase, double peso) {
 		
+		this.color = COLOR_DEF;
+		this.consumo = CONSUMO_DEF;
 		this.precioBase = precioBase;
 		this.peso = peso;
 		
@@ -51,7 +53,7 @@ public class Electrodomestico {
 		
 		boolean isLetraOK = false;
 		// A-F
-		if (consumo=='A' | consumo=='B' | consumo=='C' | consumo=='D' | consumo=='E' | consumo=='F') {
+		if (letra=='A' | letra=='B' | letra=='C' | letra=='D' | letra=='E' | letra=='F') {
 			
 			isLetraOK = true;
 			
@@ -78,54 +80,65 @@ public class Electrodomestico {
 	
 	
 	
-	private double precioFinal(char consumo, double peso) {
+	public double precioFinal() {
 		
-		double precio = 0;
+		double incremento = 0;
 		
 		// SEGUN CONSUMO
 		switch (consumo) {
 		
 			case 'A': 	
-				precio += 100;
-			
-			case 'B': 			
-				precio += 80;
+				
+				incremento += 100;
+				break;
+				
+			case 'B': 		
+				
+				incremento += 80;
+				break;
 				
 			case 'C': 
-				precio += 60;
+				
+				incremento += 60;
+				break;
 			
 			case 'D': 	
-				precio += 50;
-			
+				incremento += 50;
+				break;
+				
 			case 'E': 
-				precio += 30;
+				incremento += 30;
+				break;
 			
 			case 'F': 
-				precio += 10;
+				incremento += 10;
+				break;
+				
 		}
 		
-		
+
 		// SEGUN PESO
 		if (peso < 20) {
 			
-			precio += 10;
+			incremento += 10;
 			
-		} else if (precio >= 20 && precio < 50) {
+		} else if (peso >= 20 && peso < 50) {
 			
-			precio += 50;
+			incremento += 50;
 			
-		} else if (precio >= 50 && precio < 80) {
+		} else if (peso >= 50 && peso < 80) {
 			
-			precio += 80;
+			incremento += 80;
 			
-		} else if (precio >= 80) {
+		} else if (peso >= 80) {
 			
-			precio += 100;
+			incremento += 100;
 			
 		}
-		
-			
-		return precio;
+
+
+
+		return precioBase + incremento;
 	}
 	
 	
@@ -189,6 +202,13 @@ public class Electrodomestico {
 			this.consumo = CONSUMO_DEF;
 		}
 		
+	}
+
+
+	@Override
+	public String toString() {
+		return "Electrodomestico [precioBase=" + precioBase + ", peso=" + peso + ", color=" + color + ", consumo="
+				+ consumo + "]";
 	}
 	
 	
