@@ -24,6 +24,8 @@ public abstract class Vehiculo implements Arrancable{
 	
 	// NO NECESARIO INSTANCIAR arrancar() POR SER CLASE ABSTRACTA
 
+	
+	
 
 	
 	

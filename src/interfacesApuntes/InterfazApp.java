@@ -17,6 +17,56 @@ public class InterfazApp {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+		
+		/*
+		 * CLASE ANONIMA QUE IMPLEMENTE INTERFAZ
+		 */
+		
+		// PUEDO DECLARAR COMO PADRE, PERO INSTANCIAR COMO HIJO; Y SE COMPORTARA COMO OBJETO HIJO
+		Arrancable arrancable_coche = new Coche();
+		// PARA VER TIPO DE OBJETO - devuelve coche pero tendria que ser anonima?
+		System.out.println(arrancable_coche.getClass().getSimpleName());
+		
+		
+		
+		Arrancable arrancable = new Arrancable() {
+
+			@Override
+			public boolean esReparable() {
+				// TODO Auto-generated method stub
+				return false;
+			}
+		};
+		
+		// ESTE NO DEVUELVE NADA
+		System.out.println(arrancable.getClass().getSimpleName());
+		
+		
+		/*
+		 * LISTA DE LAS CLASES ARRANCABLES
+		 */
+		System.out.println();
+		System.out.println("LISTAMOS ARRANCABLES:");
+		Arrancable[] listArrancables= {arrancable, arrancable_coche};
+		
+		for (int i=0; i < listArrancables.length; i++) {
+			
+			System.out.println(listArrancables[i].getClass().getSimpleName());
+			
+		}
+		
+		
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
