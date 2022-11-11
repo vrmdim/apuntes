@@ -1,6 +1,6 @@
 package herencias;
 
-public class Electrodomestico {
+public class Electrodomestico implements Comparable <Electrodomestico>{
 	
 	// ATRIBUTOS
 	private double precioBase, peso;
@@ -213,8 +213,29 @@ public class Electrodomestico {
 	
 	
 	
+	/**
+	 * INTERFAZ COMPARABLE
+	 */
 	
-	
+	@Override
+	public int compareTo(Electrodomestico electrodomestico) {
+		int resultado = 0;
+		if (this.getConsumo() > electrodomestico.getConsumo()) {
+			
+			resultado = 1;
+		} if (this.getConsumo() < electrodomestico.getConsumo()) {
+			
+			resultado = -1;
+			
+		} else {
+			resultado = 0;
+		}
+		
+		return resultado;
+	}
+
+
+
 	
 	
 	
