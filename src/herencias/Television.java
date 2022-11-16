@@ -1,6 +1,6 @@
 package herencias;
 
-public class Television extends Electrodomestico{
+public class Television extends Electrodomestico {
 	
 	
 	private double resolucion;

@@ -229,9 +229,7 @@ public class AppListas {
 		System.out.println("MEZCLAR LISTA / DESORDENAR");
 		Collections.shuffle(listaTelevision);
 		System.out.println(listaTelevision);
-		
-
-		
+				
 		
 		
 	}
