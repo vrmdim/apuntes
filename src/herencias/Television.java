@@ -1,5 +1,7 @@
 package herencias;
 
+import java.util.Objects;
+
 public class Television extends Electrodomestico {
 	
 	
@@ -86,6 +88,25 @@ public class Television extends Electrodomestico {
 
 	
 	
+	@Override
+	public int hashCode() {
+		return Objects.hash(resolucion);
+	}
+
+	// equals DEVOLVERA MISMO OBJETO SI TIENEN MISMA RESOLUCION
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Television other = (Television) obj;
+		return Double.doubleToLongBits(resolucion) == Double.doubleToLongBits(other.resolucion);
+	}
+
+
 	@Override
 	public String toString() {
 		return "Television [resolucion=" + resolucion + ", smartTV=" + smartTV + "], " + super.toString();

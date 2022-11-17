@@ -199,7 +199,13 @@ public class AppListas {
 		
 		
 		// EQUALS. se puede definir equals() en cada clase para decidir que criterio de atributos 
-		//seguir para devolver que son iguales dos objetos
+		//seguir para devolver que son iguales dos objetos. Si no sobreescribimos ese metodo nos dira si son el mismo objeto.
+		
+		// PODEMOS GENERAR CON CLICK DCHO GENERATE EQUALS EN EL OBJETO QUE QUERAMOS. LO HACEMOS EN Television
+		System.out.println("EQUALS");
+		System.out.println(television1.equals(television2));	// FALSE
+		System.out.println(television3.equals(television2));	// TRUE
+		
 		
 		
 		/**

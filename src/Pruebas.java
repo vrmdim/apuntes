@@ -15,10 +15,22 @@ public class Pruebas {
 		miLista.add(3);
 		
 		miLista.forEach(System.out::println);
-		//System.out.println(miLista.toString());
 		
-		//for (Integer i; )
-
+			
 	}
+	
+	
+	
 
 }
+
+
+
+
+
+
+
+
+
+
+
