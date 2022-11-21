@@ -5,9 +5,16 @@ public class Pruebas {
 		// TODO Auto-generated method stub
 
 		
-		double precio = 1.1f;
+		String asdString = "ndm";
 		
-		System.out.println(precio);
+		String[] parts = asdString.split("d");
+		
+		System.out.println(parts[0]);
+		
+		Integer a = 1;
+		Integer b = -3;
+		
+		System.out.println(a.compareTo(b));
 		
 		
 	}

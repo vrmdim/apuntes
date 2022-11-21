@@ -243,7 +243,6 @@ public class AppListas {
 		 * METODO SPREAD (addListas.java)
  		 * 
 		 */
-		AppListas.
 		
 		
 	}
