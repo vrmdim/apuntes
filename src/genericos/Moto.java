@@ -1,9 +1,13 @@
 package genericos;
 
-public class Moto extends Vehiculo implements Identificable<String>, Arrancable{
+public class Moto extends Vehiculo implements Arrancable{
 
 	private String identificacion;
 	
+	public Moto() {
+		
+		
+	}
 	public Moto(String identificacion) {
 		
 		this.identificacion = identificacion;
@@ -22,13 +26,6 @@ public class Moto extends Vehiculo implements Identificable<String>, Arrancable{
 		this.identificacion = identificacion;
 	}
 
-
-
-	@Override
-	public String getId() {
-		// TODO Auto-generated method stub
-		return getIdentificacion();
-	}
 
 
 

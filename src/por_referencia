@@ -2,3 +2,11 @@ TIPOS POR REFERENCIA
 
 arrays, interfaces, clases, tipos variables (Genericos)
 
+
+EXAMEN : Spread
+
+Arrays.asList()
+
+imprimirIdentificables(Arrays.asList(militar1, new Militar(233)));
+
+VAMOS A TENER QUE METER LISTAS ASI
