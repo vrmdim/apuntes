@@ -10,3 +10,22 @@ Arrays.asList()
 imprimirIdentificables(Arrays.asList(militar1, new Militar(233)));
 
 VAMOS A TENER QUE METER LISTAS ASI
+
+
+Libreria en .jar IMPORTAR
+
+
+- Genericos, cae un metodo con List<> tipo el de la heladeria,
+se podra hacer entero sin genericos hasta el final
+
+- LocalDate (01-20-1299) y sumar dias.
+
+
+- Examen en general tipo heladeria
+
+- Una Constante:  
+
+
+*** IMPORTAR JAR *** que el taller arregle electrodomesticos;
+
+Click dcho proyecto - properties - java build path - add external jar (EN EL CLASSPATH)

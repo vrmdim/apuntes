@@ -245,6 +245,24 @@ public class AppListas {
 		 */
 		
 		
+		/**
+		 * TIPO CRUDO. Podemos no poner el tipo de lista, se comporta como un lenguaje debilmente tipado
+		 * 
+		 */
+		List listaCruda = new ArrayList<>();
+		
+		
+		
+		
+		
+	}
+	
+	private static void imprimirCrudo(List listaCruda) {
+		
+		for (Object object : listaCruda) {
+			
+		}
+		
 	}
 
 }
