@@ -230,3 +230,15 @@ private final static List<Complemento> LISTA_COMPLEMENTOS3 = new ArrayList<>(
 				new Complemento("Galletitas", 0.8))
 		);
 ```
+
+EN MAIN. Si va en la clase del main (fuera del método main), tendremos que instanciar 
+```
+private final static Collection<Producto> PRODUCTOS = new ArrayList<>();
+
+public static void main(String[] args) {
+	(...)
+	PRODUCTOS.add(producto1);
+	PRODUCTOS.add(producto2);
+	(...)
+}
+```
