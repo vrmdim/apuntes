@@ -17,7 +17,7 @@ public class Comentario implements Comparable<Comentario> {
 
 ```
 
-Otro ejemplo
+Otro ejemplo (útil para comparar primitivos como double)
 ```
   
 @Override
