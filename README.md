@@ -191,3 +191,42 @@ private static <T extends IIngrediente & IDescriptible & IPrecio> void imprimirC
 
 }
 ```
+
+## LISTA ESTÁTICA 'constante y modificable'
+Tres formas de crear una lista estática, a la que se le pueden añadir elementos
+
+OPCION 1
+```
+private final static List<Complemento> LISTA_COMPLEMENTOS2 = new ArrayList<>(
+	List.of(new Complemento("Virutas de chocolate", 0.5), 
+		new Complemento("Galletitas", 0.8))
+		);
+```
+
+
+OPCION 2. Es la mejor opcion si luego vamos a querer añadir una lista externa
+```
+private final static List<Ingrediente> LISTA_COMPLEMENTOS;	
+
+static {
+
+	LISTA_COMPLEMENTOS = new ArrayList<>();
+	LISTA_COMPLEMENTOS.add(new Complemento("Virutas de chocolate", 0.5));
+	LISTA_COMPLEMENTOS.add(new Complemento("Galletitas", 0.8));
+
+	// AÑADIMOS LOS COMPLEMENTOS DE LA CLASE EXTERNA
+	for (Extra complementoExtra : Extra.EXTRAS) {
+
+		LISTA_COMPLEMENTOS.add(new Complemento(complementoExtra.getDescription(), complementoExtra.getPrice()));
+
+	}
+}
+```	
+
+OPCION 3
+```	
+private final static List<Complemento> LISTA_COMPLEMENTOS3 = new ArrayList<>(
+		Arrays.asList(new Complemento("Virutas de chocolate", 0.5), 
+				new Complemento("Galletitas", 0.8))
+		);
+```
