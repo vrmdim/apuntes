@@ -242,3 +242,10 @@ public static void main(String[] args) {
 	(...)
 }
 ```
+
+## Generar número entero aleatorio
+Genera número aleatorio entre 1 y 100, AMBOS INCLUÍDOS
+```
+Random numRandom = new Random();
+int numeroAleatorio= numRandom.nextInt(1, 101);
+```
