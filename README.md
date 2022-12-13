@@ -8,6 +8,39 @@
 <img src="img/jar1.png" alt="jar" title="jar">
 <img src="img/jar2.png" alt="jar" title="jar">
 
+
+## Crear .gitignore
+```
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Eclipse files
+.project
+.classpath
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+/bin/
+```
+
 ## Comparable
 Lo implementamos en la clase que queramos comparar (en este caso DESCENDENTE)
 ```
