@@ -1,9 +1,5 @@
 # Apuntes clase POO
 
-## Importar proyecto clonado a Eclipse
-<img src="img/import.png" alt="import" title="import">
-<img src="img/import2.png" alt="import" title="import">
-
 ## Importar librería externa .jar
 <img src="img/jar1.png" alt="jar" title="jar">
 <img src="img/jar2.png" alt="jar" title="jar">
