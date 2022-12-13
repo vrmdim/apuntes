@@ -163,6 +163,19 @@ protected void setComentarios(Comentario ...newComentarios) {
     
 ```
 
+Otro ejemplo de SPREAD, que devuelve una lista
+```
+public static List<String> devuelveString(String... string) {
+		
+		List<String> listaStrings = new ArrayList<>();
+		
+		listaStrings.addAll(Arrays.asList(string));
+		
+		System.out.println(listaStrings.toString());
+		return listaStrings;
+	}
+```
+
 ## Formato precios
 METODO AUXILIAR PARA HACER PRINT EN FORMATO DE LOS PRECIOS
 ``` 
