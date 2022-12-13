@@ -80,6 +80,25 @@ Otro ejemplo (útil para comparar primitivos como double)
 	}
 ```
 
+Comparador con 2 atributos
+```
+public interface Carta<T extends Comparable<T>> extends Comparable<Carta<T>>, RepresentacionCarta {
+
+  T getPalo();
+  int getNumero();
+  
+  @Override
+  default int compareTo(Carta<T> carta) {
+    int resultado = getPalo().compareTo(carta.getPalo());
+    if (resultado == 0) {
+      resultado = Integer.compare(getNumero(), carta.getNumero());
+    }
+    return resultado;
+  }
+}
+```
+
+
 ## Comparator
 
 En otra clase
