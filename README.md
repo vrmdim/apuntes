@@ -1,5 +1,9 @@
 # Apuntes clase POO
 
+## Importar librería externa .jar
+<img src="img/jar1.png" alt="jar" title="jar">
+<img src="img/jar2.png" alt="jar" title="jar">
+
 ## Comparable
 Lo implementamos en la clase que queramos comparar (en este caso DESCENDENTE)
 ```
